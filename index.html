@@ -1,77 +1,112 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row text-center mt-5">
+    <div class="col">
+      <h1 class="display-2 text-success">{{ site.title }}</h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+  </div>
+  <div class="row text-center mb-5">
+    <div class="col">
+      <a class="mx-1" href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope-square fa-4x"></i></a>
+      <a class="mx-1" href="{{ site.github_url }}" target="_blank"><i class="fab fa-github-square fa-4x"></i></a>
+      <a class="mx-1" href="{{ site.twitter_url }}" target="_blank"><i class="fab fa-twitter-square fa-4x"></i></a>
+    </div>
+  </div>
 
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>WebBreaker</title>
-    <meta name="description" content="Minimal tutorial on configuring and running WebBreaker">
-    <meta name="author" content="Brandon Spruth">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/themes/twitter/css/kbroman.css" rel="stylesheet" type="text/css" media="all">
-
-    <!-- Le fav and touch icons -->
-
-    <!-- atom & rss feed -->
-    <link href="nil" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="nil" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  </head>
-
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="/">WebBreaker</a>
+  <div class="row text-center mt-5">
+    <div class="col">
+      <h2>Getting Started</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-apple-original"></i></h3>
+          <h5 class="text-success mt-4">Brew <span class="badge badge-warning">Coming Soon</span></h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>brew install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.high_sierra_download_url }}" role="button">High Sierra</a>
+          <a class="btn btn-primary" href="{{ site.sierra_download_url }}" role="button">Sierra</a>
+          <a class="btn btn-primary disabled" href="{{ site.el_capitan_download_url }}" role="button">El Capitan</a>
         </div>
       </div>
     </div>
-
-    <div class="container-narrow">
-
-      <div class="content">
-        
-
-<div class="page-header">
-  <h2>WebBreaker  <small>Web Securtiy Testing Client</small></h2>
-</div>
-
-<div class="row-fluid">
-  <div class="span12">
-    <p>WebBreaker is an open source Dynamic Application Security Test Orchestration (DASTO) client, enabling development teams to create pipelines for security testing, or build, execute and automate functional security tests, from WebInspect, Fortify SSC, and ThreadFix.</p>
-
-<hr />
-
-<p>Also see Target’s <a href="http://github.com/target/webbreaker">WebBreaker project site</a></p>
-
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-linux-plain"></i></h3>
+          <h5 class="text-success mt-4">Yum</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>yum install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.centos_download_url }}" role="button">Centos</a>
+          <a class="btn btn-primary" href="{{ site.fedora_download_url }}" role="button">Fedora</a>
+          <a class="btn btn-primary" href="{{ site.redhat_download_url }}" role="button">Red Hat</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-windows8-original"></i></h3>
+          <h5 class="text-success mt-4">Chocolatey <span class="badge badge-warning">Coming Soon</span></h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>choco install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.windows7_download_url }}" role="button">Windows 7</a>
+          <a class="btn btn-primary" href="{{ site.windows10_download_url }}" role="button">Windows 10</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-success">Build and install from source</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>
+                git clone https://github.com/target/webbreaker<br/>
+                cd webbreaker<br/>
+                pip install -r requirements.txt<br/>
+                python setup.py install
+              </code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Binary</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>
+                git clone https://github.com/target/webbreaker<br/>
+                cd webbreaker<br/>
+                python setup.py pyinstaller
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3 text-center text-muted">
+    <div class="col">
+      <p>Licensed under the MIT License<br/>
+      Copyright 2018 Target Brands, Inc.</p>
+    </div>
   </div>
 </div>
-
-
-      </div>
-      <hr>
-      <footer>
-        <p><small>
-  <!-- start of Brandon's footer; modify this part -->
-          <a href="http://brandon.spruth.co">Brandon Spruth</a>
-  <!-- end of Brandon's footer; modify this part -->
-        </small></p>
-      </footer>
-
-    </div>
-
-    
-  </body>
-</html>
-
