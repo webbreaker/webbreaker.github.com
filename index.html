@@ -1,0 +1,112 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row text-center mt-5">
+    <div class="col">
+      <h1 class="display-2 text-success">{{ site.title }}</h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+  </div>
+  <div class="row text-center mb-5">
+    <div class="col">
+      <a class="mx-1" href="mailto:{{ site.email }}" target="_blank"><i class="fas fa-envelope-square fa-4x"></i></a>
+      <a class="mx-1" href="{{ site.github_url }}" target="_blank"><i class="fab fa-github-square fa-4x"></i></a>
+      <a class="mx-1" href="{{ site.twitter_url }}" target="_blank"><i class="fab fa-twitter-square fa-4x"></i></a>
+    </div>
+  </div>
+
+  <div class="row text-center mt-5">
+    <div class="col">
+      <h2>Getting Started</h2>
+      <p></p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-apple-original"></i></h3>
+          <h5 class="text-success mt-4">Brew <span class="badge badge-warning">Coming Soon</span></h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>brew install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.high_sierra_download_url }}" role="button">High Sierra</a>
+          <a class="btn btn-primary" href="{{ site.sierra_download_url }}" role="button">Sierra</a>
+          <a class="btn btn-primary disabled" href="{{ site.el_capitan_download_url }}" role="button">El Capitan</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-linux-plain"></i></h3>
+          <h5 class="text-success mt-4">Yum</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>yum install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.centos_download_url }}" role="button">Centos</a>
+          <a class="btn btn-primary" href="{{ site.fedora_download_url }}" role="button">Fedora</a>
+          <a class="btn btn-primary" href="{{ site.redhat_download_url }}" role="button">Red Hat</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title display-4 text-center"><i class="devicon-windows8-original"></i></h3>
+          <h5 class="text-success mt-4">Chocolatey <span class="badge badge-warning">Coming Soon</span></h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>choco install webbreaker</code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Download &amp; Install</h5>
+          <a class="btn btn-primary" href="{{ site.windows7_download_url }}" role="button">Windows 7</a>
+          <a class="btn btn-primary" href="{{ site.windows10_download_url }}" role="button">Windows 10</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="text-success">Build and install from source</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>
+                git clone https://github.com/target/webbreaker<br/>
+                cd webbreaker<br/>
+                pip install -r requirements.txt<br/>
+                python setup.py install
+              </code>
+            </div>
+          </div>
+          <h5 class="text-success mt-4">Binary</h5>
+          <div class="card bg-secondary mt-1">
+            <div class="card-body">
+              <code>
+                git clone https://github.com/target/webbreaker<br/>
+                cd webbreaker<br/>
+                python setup.py pyinstaller
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3 text-center text-muted">
+    <div class="col">
+      <p>Licensed under the MIT License<br/>
+      Copyright 2018 Target Brands, Inc.</p>
+    </div>
+  </div>
+</div>
