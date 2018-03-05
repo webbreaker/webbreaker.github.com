@@ -29,7 +29,7 @@ el_capitan_download_url: https://github.com/target/webbreaker/releases/download/
 centos_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
 fedora_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
 redhat_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
-windows7_download_url: https://github.com/target/webbreaker/releases/download/2.0.18/webbreaker-v2-0-18.exe
+windows7_download_url: https://github.com/target/webbreaker/releases/download/latest/webbreaker-win-7.exe
 windows10_download_url: https://github.com/target/webbreaker/releases/download/latest/webbreaker-win-10.exe
 
 # Build settings
