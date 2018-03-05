@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_url: https://twitter.com/_webbreaker_
 github_url: https://github.com/target/webbreaker
+guide_url: https://target.github.com/webbreaker
 
 # Download URLs
 high_sierra_download_url: https://github.com/target/webbreaker/releases/download/latest/webbreaker-osx-high-sierra
