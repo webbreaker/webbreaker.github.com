@@ -24,7 +24,7 @@ github_url: https://github.com/target/webbreaker
 
 # Download URLs
 high_sierra_download_url: https://github.com/target/webbreaker/releases/download/2.1.0/webbreaker-osx-high-sierra
-sierra_download_url: https://github.com/target/webbreaker/releases/download/2.1.0/webbreaker-osx-sierra
+sierra_download_url: https://github.com/target/webbreaker/releases/download/latest/webbreaker-osx-sierra
 el_capitan_download_url: https://github.com/target/webbreaker/releases/download/latest/webbreaker-osx-el-capitan
 centos_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
 fedora_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
