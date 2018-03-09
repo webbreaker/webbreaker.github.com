@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_url: https://twitter.com/_webbreaker_
 github_url: https://github.com/target/webbreaker
-youtube_url: 
+youtube_url: https://youtu.be/_r35ITC-ySM
 guide_url: https://target.github.com/webbreaker
 
 # Download URLs
