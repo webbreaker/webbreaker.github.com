@@ -126,42 +126,41 @@ layout: default
         </button>
       </div>
       <div class="modal-body">
-        <p>This guide will assist you with installing and setting up WebBreaker.</p>
-        <hr/>
-        <h5>Download</h5>
-        <p><i class="fas fa-check text-success"></i><samp> http://webbreaker.io/</samp></p>
-        <h5>Rename</h5>
-        <p><i class="fas fa-check text-success"></i> Rename the file to <code>webbreaker</code> or for Windows <code>webbreaker.exe</code>
-        </p>
-        <h5>Environment Settings</h5>
-        <p><i class="fas fa-check text-success"></i> Add it to your environment's <code>$PATH</code> or for Windows <code>%PATH%</code>
-        </p>
-        <h5>Pre-Configuration</h5>
-        <p><i class="fas fa-check text-success"></i> First time installs, run the webbreaker command in your terminal to
-            create the default configurations, under <code>$HOME/.webbreaker/config.ini</code></p>
-        <h5>Post-Configuration</h5>
-        <p><i class="fas fa-check text-success"></i> Configure Webinspect, Fortify SSC, and ThreadFix sections to your
-            environment.
-            <code>
-                # Your required Fortify SSC URL and run `webbreaker admin credentials --fortify`
-                [fortify]
-                ssc_url = https://ssc.example.com/ssc
-                username =
-                password =
-
-                # Create a ThreadFix API Key from your ThreadFix deployment
-                [threadfix]
-                host = https://threadfix.example.com:8443/threadfix
-                api_key = ENTER API KEY HERE
-
-                # Enable WebInspect authentication set it to `true` after it is configured on the server
-                authenticate = false
-                username =
-                password =
-            </code>
-        </p>
-        <hr/>
-        <p class="lead text-center pt-3">That's it, you're done! Happy scanning!</p>
+          <hr/>
+          <h5><i class="fas fa-check text-success"></i> Download</h5>
+          <p><samp> http://webbreaker.io/</samp></p>
+          <h5><i class="fas fa-check text-success"></i> Rename</h5>
+          <p>Rename the file to <code>webbreaker</code> or for Windows <code>webbreaker.exe</code>
+          </p>
+          <h5><i class="fas fa-check text-success"></i> Environment Settings</h5>
+          <p>Add it to your environment's <code>$PATH</code> or for Windows <code>%PATH%</code>
+          </p>
+          <h5><i class="fas fa-check text-success"></i> Pre-Configuration</h5>
+          <p>First time installs, run the webbreaker command in your terminal to
+              create the default configurations, under <code>$HOME/.webbreaker/config.ini</code></p>
+          <h5><i class="fas fa-check text-success"></i> Post-Configuration</h5>
+          <p>Configure Webinspect, Fortify SSC, and ThreadFix sections to your
+              environment.
+              <code>
+                  # Your required Fortify SSC URL and run `webbreaker admin credentials --fortify`<br/>
+                  [fortify]<br/>
+                  ssc_url = https://ssc.example.com/ssc<br/>
+                  username =<br/>
+                  password =<br/>
+                  <br/>
+                  # Create a ThreadFix API Key from your ThreadFix deployment<br/>
+                  [threadfix]<br/>
+                  host = https://threadfix.example.com:8443/threadfix<br/>
+                  api_key = ENTER API KEY HERE<br/>
+                  <br/>
+                  # Enable WebInspect authentication set it to `true` after it is configured on the server<br/>
+                  authenticate = false<br/>
+                  username =<br/>
+                  password =<br/>
+              </code>
+          </p>
+          <hr/>
+          <p class="lead text-center pt-3">That's it, you're done! Happy scanning!</p>
       </div>
     </div>
   </div>
