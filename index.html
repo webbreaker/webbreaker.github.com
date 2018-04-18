@@ -128,8 +128,7 @@ layout: default
       <div class="modal-body">
           <hr/>
           <h5><i class="fas fa-check text-success"></i>&nbsp;Download & Rename</h5>
-          <p><samp> http://webbreaker.io/</samp>
-              Rename the file to <code>webbreaker</code> or for Windows <code>webbreaker.exe</code></p>
+              Rename your downloaded file to <code>webbreaker</code> or for Windows <code>webbreaker.exe</code></p>
           <h5><i class="fas fa-check text-success"></i>&nbsp;Environment Settings</h5>
           <p>Add it to your environment's <code>$PATH</code> or for Windows <code>%PATH%</code>
           </p>
@@ -138,23 +137,22 @@ layout: default
               create the default configurations, under <code>$HOME/.webbreaker/config.ini</code></p>
           <h5><i class="fas fa-check text-success"></i>&nbsp;Post-Configuration</h5>
           <p>Configure the Webinspect, Fortify SSC, and ThreadFix sections to your
-              environment.
+              environment.<br/>
               <code>
-                  # Your required Fortify SSC URL and run `webbreaker admin credentials --fortify`<br/>
+                  # Change to your Fortify SSC URL and run `webbreaker admin credentials --fortify`<br/>
                   [fortify]<br/>
                   ssc_url = https://ssc.example.com/ssc<br/>
                   username =<br/>
                   password =<br/>
                   <br/>
-                  # Create a ThreadFix API Key from your ThreadFix deployment<br/>
+                  # Change to your ThreadFix URL and create a ThreadFix API Key from your deployment<br/>
                   [threadfix]<br/>
                   host = https://threadfix.example.com:8443/threadfix<br/>
                   api_key = ENTER API KEY HERE<br/>
                   <br/>
-                  # Enable WebInspect authentication set it to `true` after it is configured on the server<br/>
-                  authenticate = false<br/>
-                  username =<br/>
-                  password =<br/>
+                  # Change and add as many WebInspect servers as you like! Default port is 8083/tcp<br/>
+                  server_01 = https://webinspect1.example.com:8083<br/>
+                  endpoint_01 = %(server_01)s|%(size_large)s<br/>
               </code>
           </p>
           <hr/>
