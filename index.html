@@ -127,7 +127,7 @@ layout: default
       </div>
       <div class="modal-body">
           <hr/>
-          <h5><i class="fas fa-check text-success"></i>&nbsp;Download & Rename</h5>
+          <h5><i class="fas fa-check text-success"></i>&nbsp;Download</h5>
               Rename your downloaded file to <code>webbreaker</code> or for Windows <code>webbreaker.exe</code></p>
           <h5><i class="fas fa-check text-success"></i>&nbsp;Environment Settings</h5>
           <p>Add it to your environment's <code>$PATH</code> or for Windows <code>%PATH%</code>
@@ -138,6 +138,7 @@ layout: default
           <h5><i class="fas fa-check text-success"></i>&nbsp;Post-Configuration</h5>
           <p>Configure the Webinspect, Fortify SSC, and ThreadFix sections to your
               environment.<br/>
+              <br/>
               <code>
                   # Change to your Fortify SSC URL and run `webbreaker admin credentials --fortify`<br/>
                   [fortify]<br/>
@@ -145,12 +146,12 @@ layout: default
                   username =<br/>
                   password =<br/>
                   <br/>
-                  # Change to your ThreadFix URL and create a ThreadFix API Key from your deployment<br/>
+                  # Change to your ThreadFix URL and create a ThreadFix API Key<br/>
                   [threadfix]<br/>
                   host = https://threadfix.example.com:8443/threadfix<br/>
                   api_key = ENTER API KEY HERE<br/>
                   <br/>
-                  # Change and add as many WebInspect servers as you like! Default port is 8083/tcp<br/>
+                  # Change to your WebInspect server(s)<br/>
                   server_01 = https://webinspect1.example.com:8083<br/>
                   endpoint_01 = %(server_01)s|%(size_large)s<br/>
               </code>
