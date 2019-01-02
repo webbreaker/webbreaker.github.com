@@ -20,17 +20,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   WebInspect, Fortify SSC, and ThreadFix.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http" # the base hostname & protocol for your site, e.g. http://example.com
-github_url: https://github.com/target/webbreaker
+github_url: https://github.com/webbreaker/webbreaker
 youtube_url: https://www.youtube.com/channel/UCUNc7fgGUcoATi0Wfpl0AoA
-guide_url: https://target.github.com/webbreaker
+guide_url: https://webbreaker.github.com/webbreaker
 
 # Download URLs
-high_sierra_download_url: https://github.com/target/webbreaker/releases/download/v2.2.0/webbreaker-osx-high-sierra
-sierra_download_url: https://github.com/target/webbreaker/releases/download/v2.2.0/webbreaker-osx-sierra
+high_sierra_download_url: https://github.com/webbreaker/webbreaker/releases/download/v2.2.0/webbreaker-osx-high-sierra
+sierra_download_url: https://github.com/webbreaker/webbreaker/releases/download/v2.2.0/webbreaker-osx-sierra
 centos_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
 fedora_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
 redhat_download_url: https://bintray.com/webbreaker/webbreaker-cli/webbreaker/_latestVersion
-windows10_download_url: https://github.com/target/webbreaker/releases/download/v2.2.0/webbreaker-win-10.exe
+windows10_download_url: https://github.com/webbreaker/webbreaker/releases/download/v2.2.0/webbreaker-win-10.exe
 
 # Build settings
 markdown: kramdown
